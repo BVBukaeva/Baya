@@ -27,3 +27,99 @@
 let a:number=(Math.random()*10);
 let b:number=(Math.random()*2)-10;
 console.log(a>=0,b<-2);
+
+
+//Дано целое число. Если оно является положительным, то прибавить к нему 1; в противном случае вычесть из него 2. Вывести полученное число.
+let c:number=Math.round ((Math.random()*10)-5);
+if (c>0){
+    c=c+1
+}else if(c<0){
+    c=c-2
+}
+console.log('c',c);
+
+//Дано целое число. Если оно является положительным, то прибавить к нему 1;если отрицательным, то вычесть из него 2. Если нулевым, то заменить его на 10. Вывести полученное число.
+let d:number=Math.round((Math.random()*10)-10);
+if(d>0){
+    d=d+1
+}if(d<0){
+    d=d-2
+}if(d===0){
+    d=10-d
+}
+console.log('d',d);
+
+//Даны три целых числа. Найти количество положительных чисел в исходном наборе
+const e:number=Math.round((Math.random()*5)-1);
+const f:number=Math.round((Math.random()*5)-1);
+const g:number=Math.round((Math.random()*5)-1);
+if (e>f && e>g){
+    console.log('Положительное число e', e)
+}
+if (f>e && f>g){
+    console.log('Положительное число f', f)
+}
+if (g>e && g>f){
+    console.log('Положительное число g', g)
+}
+
+//Даны три целых числа. Найти количество положительных и количество отрицательных чисел в исходном наборе
+const h:number=Math.round((Math.random()*5)-1);
+const j:number=Math.round((Math.random()*5)-1);
+const k:number=Math.round((Math.random()*5)-1);
+if (h>j && h>k){
+    console.log('Положительное число h', h)
+}
+else if (h<j && h<k){
+    console.log('Отрицательное число h', h)
+}
+if (j>h && j>k){
+    console.log('Положительное число j', j)
+}
+else if (j<h && j<k){
+    console.log('Отрицательное число j', j)
+}
+if (k>h && k>j){
+    console.log('Положительное число k', k)
+}
+else if (k<h && k<j){
+    console.log('Отрицательное число k', k)
+}
+
+//Даны два числа. Вывести большее из них
+let q:number=Math.round(Math.random()*100)-10;
+let w:number=Math.round(Math.random()*100)-10;
+if (q>w){
+    console.log('Большее число q',q)
+}
+else if (w>q){
+    console.log('Большее число w',w)
+}
+
+//Даны два числа. Вывести порядковый номер меньшего из них
+let r:number=Math.round(Math.random()*100)-10;
+let t:number=Math.round(Math.random()*100)-10;
+if (r<t){
+    console.log('Порядковый номер r',r)
+}
+else if (t<r){
+    console.log('Порядковый номер t',t)
+}
+
+//Даны два числа. Вывести вначале большее, а затем меньшее из них
+let y:number=Math.round(Math.random()*100)-10;
+let u:number=Math.round(Math.random()*100)-10;
+if (y>u){
+    console.log('Большее число y',y)
+}
+if (u>y){
+    console.log('Большее число u',u)
+}
+else if (y<u){
+    console.log('Меньшее число y',y)
+}
+else if (u<y){
+    console.log('Меньшее число u',u)
+}
+
+//Даны две переменные вещественного типа: A,B. Перераспределить значения данных переменных так, чтобы в А оказалось меньшее из значений,а в В-большее.Вывести новые значения переменных А и В
