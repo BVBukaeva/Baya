@@ -122,4 +122,84 @@ else if (u<y){
     console.log('Меньшее число u',u)
 }
 
-//Даны две переменные вещественного типа: A,B. Перераспределить значения данных переменных так, чтобы в А оказалось меньшее из значений,а в В-большее.Вывести новые значения переменных А и В
+//Даны две переменные целого типа: A и B. Если их значения не равны, то присвоить каждой переменной сумму этих значений, а если равны, то присвоить переменным нулевые значения. Вывести новые значения переменных A и B.
+
+{
+    let a:number=Math.round(Math.random()*10)-5;
+    let b:number=Math.round(Math.random()*10)-5;
+    if (a !== b){
+        a = a + b;
+        b = b + a;
+    } else {
+      a = 0;
+      b = 0;
+    }
+
+    console.log('a', a);
+    console.log('b', b);
+}
+
+//Даны две переменные целого типа: A и B. Если их значения не равны, то присвоить каждой переменной большее из этих значений, а если равны, то присвоить переменным нулевые значения. Вывести новые значения переменных A и B.
+
+{
+    let a:number=Math.round(Math.random()*10)-5;
+    let b:number=Math.round(Math.random()*10)-5;
+    if (a !== b){
+        a > b;
+        b > a;
+        b = a;
+        a = b;
+        }
+    else {
+        a = 0;
+        b = 0;
+    }
+    console.log('a', a);
+    console.log('b', b);
+}
+
+// Даны три числа. Найти среднее из них (то есть число, расположенное между наименьшим и наибольшим).
+
+{
+    const a:number=Math.round(Math.random()*100)-10;
+    const b:number=Math.round(Math.random()*100)-10;
+    const c:number=Math.round(Math.random()*100)-10;
+    let minNum:number;
+    let maxNum:number;
+    let middleNum:number;
+
+}
+
+//Даны три числа. Вывести вначале наименьшее, а затем наибольшее из данных чисел.
+
+{   const a:number=Math.round(Math.random()*100)-10;
+    const b:number=Math.round(Math.random()*100)-10;
+    const c:number=Math.round(Math.random()*100)-10;
+
+    if (a < b && a < c){
+        console.log('Наименьшее число a',a);
+    }
+    if (b < a && b < c){
+        console.log('Наименьшее число b',b);
+    }
+    if (c < a && c < b){
+        console.log('Наименьшее число c',c)
+    }
+
+    if (a > b && a > c){
+        console.log('Наибольшее число a',a);
+    }
+    if (b > a && b > c){
+        console.log('Наибольшее число b',b);
+    }
+    if (c > a && c > b){
+        console.log('Наибольшее число c',c)
+    }
+}
+
+//Даны три числа. Найти сумму двух наибольших из них.
+{
+        const a:number=Math.round(Math.random()*100)-10;
+        const b:number=Math.round(Math.random()*100)-10;
+        const c:number=Math.round(Math.random()*100)-10;
+}
